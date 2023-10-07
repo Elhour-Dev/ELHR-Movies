@@ -19,8 +19,10 @@ main{
 a{
     text-decoration: none;
 }
-form.search{
+nav.search{
     margin-bottom: 0px;
+    margin: 0 auto 0 auto;
+    width: 50%;
     padding-top: 10px;
     border-radius: 30px;
 
@@ -29,6 +31,7 @@ form.search{
     width: 100%;
     display:flex;
     align-items:center ;
+    position: relative;
 }
 
 .search-bar{
@@ -52,11 +55,17 @@ form.search{
     width: 7%;
     margin-bottom: 0px;
     border-radius: 30px;
+    border: 0;
     padding: 13px;
+    position: absolute;
+    left: 93%;
+    right: 0;
+    background: none
 }
 .search-icon{
     align-items: center;
     color: rgb(255, 255, 255);
+    background: none;
 }
 h1{
     font-size: 4rem;
@@ -66,6 +75,7 @@ h1{
     margin-right: 50px;
     text-shadow: 3px 4px 3px rgb(154 0 0 / 55%);
     color: rgb(255, 80, 80);
+    margin-bottom: 26px;
 }
 h2{
     font-size: 2.2rem;
@@ -82,49 +92,52 @@ img{
     border-radius: 20px;
     margin-bottom: 8px;
 }
-img.EQ{
+img#EQ{
     box-shadow: 5px 5px 0 rgb(241, 157, 0);
 }
-img.BB{
+img.img {
+    width: 900px;
+}
+img#BB{
     box-shadow: 5px 5px 0 rgb(35, 0, 193);
 }
-img.AS{
+img#AS{
     box-shadow: 5px 5px 0 rgb(193, 90, 0);
 }
-img.BRB{
+img#BRB{
     box-shadow: 5px 5px 0 rgb(255, 0, 140);
 }
-img.NHF{
+img#NHF{
     box-shadow: 5px 5px 0 rgb(221, 255, 0);
 }
-img.TF{
+img#TF{
     box-shadow: 5px 5px 0 rgb(255, 106, 0);
 }
-img.DD{
+img#DD{
     box-shadow: 5px 5px 0 rgb(162, 0, 0);
 }
-img.SMB{
+img#SMB{
     box-shadow: 5px 5px 0 rgb(255, 57, 57);
 }
-img.GOTG{
+img#GOTG{
     box-shadow: 5px 5px 0 rgb(68, 0, 157);
 }
-img.FFX{
+img#FFX{
     box-shadow: 5px 5px 0 rgb(144, 144, 144);
 }
-img.SMATSV{
+img#SMATSV{
     box-shadow: 5px 5px 0 rgb(255, 0, 0);
 }
-img.TROTB{
+img#TROTB{
     box-shadow: 5px 5px 0 rgb(190, 190, 190);
 }
-img.TGM{
+img#TGM{
     box-shadow: 5px 5px 0 rgb(255, 119, 0);
 }
-img.AVTR{
+img#AVTR{
     box-shadow: 5px 5px 0 rgb(58, 18, 255);
 }
-img.TDK{
+img#TDK{
     box-shadow: 5px 5px 0 rgb(27, 0, 90);
 }
 button{
