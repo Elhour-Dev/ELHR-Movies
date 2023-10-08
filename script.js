@@ -1,16 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const searchButton = document.querySelector('.search-button');
+    const titles = document.querySelectorAll('h2');
+    const noResultsMessage = document.querySelector('.no-results');
 
-    document.querySelector('.search-button').addEventListener('click', e =>  {
+    searchButton.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelectorAll('h2').forEach(title => {
- 
-            if (title.textContent.toLowerCase().includes(e.currentTarget.closest(".search").querySelector('.search-bar').value.toLowerCase())) {
-                          console.log('dnbfdnbdfnf ndf');
-                title.parentElement.style.display = 'block';
+        const searchValue = document.querySelector('.search-bar').value.toLowerCase();
+        let resultsFound = false;
+
+        titles.forEach(title => {
+            const movieTitle = title.textContent.toLowerCase();
+            const parentElement = title.parentElement;
+
+            if (movieTitle.includes(searchValue)) {
+                parentElement.style.display = 'block';
+                resultsFound = true;
             } else {
-                title.parentElement.style.display = 'none';
+                parentElement.style.display = 'none';
             }
         });
 
+        if (resultsFound) {
+            noResultsMessage.style.display = 'none';
+        } else {
+            noResultsMessage.style.display = 'block';
+        }
     });
 });

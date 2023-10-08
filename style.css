@@ -67,6 +67,9 @@ nav.search{
     color: rgb(255, 255, 255);
     background: none;
 }
+form {
+    margin-bottom: 0px;
+}
 h1{
     font-size: 4rem;
     text-align: center;
@@ -92,11 +95,22 @@ img{
     border-radius: 20px;
     margin-bottom: 8px;
 }
+img.imgs {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+img#AFT5{
+    box-shadow: 5px 5px 0 #f5f1e8;
+}
+img#NUN2{
+    box-shadow: 5px 5px 0 rgb(100, 100, 100);
+}
 img#EQ{
     box-shadow: 5px 5px 0 rgb(241, 157, 0);
 }
-img.img {
-    width: 900px;
+img#GT{
+    box-shadow: 5px 5px 0 #ec2e1c;
 }
 img#BB{
     box-shadow: 5px 5px 0 rgb(35, 0, 193);
@@ -106,6 +120,12 @@ img#AS{
 }
 img#BRB{
     box-shadow: 5px 5px 0 rgb(255, 0, 140);
+}
+img#MI7{
+    box-shadow: 5px 5px 0 rgb(255, 255, 255);
+}
+img#IJ5{
+    box-shadow: 5px 5px 0 #a43524;
 }
 img#NHF{
     box-shadow: 5px 5px 0 rgb(221, 255, 0);
