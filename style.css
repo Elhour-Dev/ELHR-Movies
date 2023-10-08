@@ -13,7 +13,7 @@ main{
     margin-top: -10px;
     margin-right: auto;
     margin-bottom: 0px;
-    margin-left: 12px;
+    margin-left: 20px;
     width: 98%;
 }
 a{
@@ -54,13 +54,17 @@ nav.search{
 .search-button{
     width: 7%;
     margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
     border-radius: 30px;
     border: 0;
     padding: 13px;
+    padding-bottom: 14px;
     position: absolute;
     left: 93%;
     right: 0;
     background: none
+    
 }
 .search-icon{
     align-items: center;
@@ -88,12 +92,23 @@ h2{
     margin-bottom: 0px;
     margin-left: auto;
 }
-h3{
+h3.fot-text {
     font-size: 1.313rem;
+}
+h3.actors{
+    width: 60%;
+}
+p {
+    width: 60%;
 }
 img{
     border-radius: 20px;
     margin-bottom: 8px;
+    margin-left: 6px;
+    transition: transform 0.3s ease;
+}
+.img:hover {
+    transform: scale(1.1);
 }
 img.imgs {
     width: 100%;
@@ -162,13 +177,20 @@ img#TDK{
 }
 button{
     border-radius: 25px;
+    border-style: none;
     color: black;
     margin-bottom: 12px;
+    margin-top: 6px;
+    margin-left: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 26px;
     padding-left: 26px;
     font-family: 'Rubik', sans-serif;
+}
+button:hover {
+    background-color: rgb(255, 52, 52);
+    color: white;
 }
 .no-results{
     margin-top: 200px;
