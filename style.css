@@ -3,29 +3,36 @@
 html{
     font-family: 'Rubik', sans-serif;
 }
-
 body {
+    display: flex;
     background-color: rgb(0, 0, 0);
     color: white;
     min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+header {
+    width: 100%;
 }
 main{
+    display: flex;
     margin-top: -10px;
     margin-right: auto;
-    margin-bottom: 0px;
     margin-left: 20px;
-    width: 98%;
+    margin-bottom: 0px;
+    flex-direction: column;
 }
 a{
     text-decoration: none;
 }
 nav.search{
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     margin: 0 auto 0 auto;
     width: 50%;
     padding-top: 10px;
     border-radius: 30px;
-
+    padding-top: 0px;
 }
 .search{
     width: 100%;
@@ -46,33 +53,13 @@ nav.search{
     border: none;
     outline: none;
 }
-.search-bar:focus-within{
-    border: 3px solid;
-    border-inline-color: none;
-    border-radius: 30px;
-}
-.search-button{
-    width: 7%;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-radius: 30px;
+button.search-button {
     border: 0;
-    padding: 13px;
+    padding: 15px;
     padding-bottom: 14px;
     position: absolute;
-    left: 93%;
     right: 0;
     background: none
-    
-}
-.search-icon{
-    align-items: center;
-    color: rgb(255, 255, 255);
-    background: none;
-}
-form {
-    margin-bottom: 0px;
 }
 h1{
     font-size: 4rem;
@@ -88,12 +75,7 @@ h2{
     font-size: 2.2rem;
     letter-spacing: 1px;
     margin-top: 40px;
-    margin-right: auto;
     margin-bottom: 0px;
-    margin-left: auto;
-}
-h3.fot-text {
-    font-size: 1.313rem;
 }
 h3.actors{
     width: 60%;
@@ -101,102 +83,49 @@ h3.actors{
 p {
     width: 60%;
 }
+p.no-result {
+    margin: 200 200 200 485;
+    width: 100%;
+    text-align: center;
+}
 img{
     border-radius: 20px;
-    margin-bottom: 8px;
-    margin-left: 6px;
-    transition: transform 0.3s ease;
-}
-.img:hover {
-    transform: scale(1.1);
-}
-img.imgs {
+    box-shadow: 5px 5px 0 #ff0f0f;
+    margin: 20px 20px 30px 10px;
     width: 100%;
     max-width: 1000px;
     height: auto;
+    transition: transform 0.3s ease;
 }
-img#AFT5{
-    box-shadow: 5px 5px 0 #f5f1e8;
+a {
+    border: 3px solid;
+    padding: 18 25;
+    border-radius: 40px;
+    border-style: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 10px;
+    font-size: 15px;
 }
-img#NUN2{
-    box-shadow: 5px 5px 0 rgb(100, 100, 100);
+a:hover {
+    background-color: rgb(255, 49, 49);
+    color: white;
 }
-img#EQ{
-    box-shadow: 5px 5px 0 rgb(241, 157, 0);
-}
-img#GT{
-    box-shadow: 5px 5px 0 #ec2e1c;
-}
-img#BB{
-    box-shadow: 5px 5px 0 rgb(35, 0, 193);
-}
-img#AS{
-    box-shadow: 5px 5px 0 rgb(193, 90, 0);
-}
-img#BRB{
-    box-shadow: 5px 5px 0 rgb(255, 0, 140);
-}
-img#MI7{
-    box-shadow: 5px 5px 0 rgb(255, 255, 255);
-}
-img#IJ5{
-    box-shadow: 5px 5px 0 #a43524;
-}
-img#NHF{
-    box-shadow: 5px 5px 0 rgb(221, 255, 0);
-}
-img#TF{
-    box-shadow: 5px 5px 0 rgb(255, 106, 0);
-}
-img#DD{
-    box-shadow: 5px 5px 0 rgb(162, 0, 0);
-}
-img#SMB{
-    box-shadow: 5px 5px 0 rgb(255, 57, 57);
-}
-img#GOTG{
-    box-shadow: 5px 5px 0 rgb(68, 0, 157);
-}
-img#FFX{
-    box-shadow: 5px 5px 0 rgb(144, 144, 144);
-}
-img#SMATSV{
-    box-shadow: 5px 5px 0 rgb(255, 0, 0);
-}
-img#TROTB{
-    box-shadow: 5px 5px 0 rgb(190, 190, 190);
-}
-img#TGM{
-    box-shadow: 5px 5px 0 rgb(255, 119, 0);
-}
-img#AVTR{
-    box-shadow: 5px 5px 0 rgb(58, 18, 255);
-}
-img#TDK{
-    box-shadow: 5px 5px 0 rgb(27, 0, 90);
+a.nav-logo {
+    background: transparent;
+    width: auto;
 }
 button{
     border-radius: 25px;
-    border-style: none;
-    color: black;
-    margin-bottom: 12px;
-    margin-top: 6px;
-    margin-left: 12px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 26px;
-    padding-left: 26px;
-    font-family: 'Rubik', sans-serif;
 }
 button:hover {
     background-color: rgb(255, 52, 52);
-    color: white;
 }
 .no-results{
-    margin-top: 200px;
-    margin-bottom: 200px;
-    font-size: 24px;
-    text-align: center; 
+    font-size: 30px;
 }
 footer{
     text-align: center;
