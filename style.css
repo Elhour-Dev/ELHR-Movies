@@ -15,16 +15,19 @@ body {
 header {
     width: 100%;
 }
-main{
+main.container {
     display: flex;
-    margin-top: -10px;
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 0px;
     flex-direction: column;
 }
 a{
     text-decoration: none;
+}
+a.nav-logo {
+    margin: 0;
+    padding: 0;
 }
 nav.search{
     margin-bottom: 20px;
@@ -64,12 +67,9 @@ button.search-button {
 h1{
     font-size: 4rem;
     text-align: center;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
     text-shadow: 3px 4px 3px rgb(154 0 0 / 55%);
     color: rgb(255, 80, 80);
-    margin-bottom: 26px;
+    margin: 40px 0 0 0;
 }
 h2{
     font-size: 2.2rem;
@@ -87,6 +87,13 @@ p.no-result {
     margin: 200 200 200 485;
     width: 100%;
     text-align: center;
+}
+p.prototype-message {
+    width: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: auto;
 }
 img{
     border-radius: 20px;
@@ -126,6 +133,11 @@ button:hover {
 }
 .no-results{
     font-size: 30px;
+}
+hr.separator-body-foot {
+    color: white;
+    width: 50%;
+    margin: 20px;
 }
 footer{
     text-align: center;

@@ -4,7 +4,7 @@ let movies = {
                         'sous-title'   : ' Actors : Josephine Langford, Mimi Keene, Hero Fiennes-Tiffin, Benjamin Mascolo, Arielle Kebbel, Jessica Webber',
                         'description'  : ' Author Hardin Scott travels to Portugal to try to make Natalie forgive what he did to her.',
                         'img'          : 'https://spgeng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2023/09/05/node_706689/55026969/public/2023/09/05/B9735023772Z.1_20230905114415_000%2BGTNND5AM3.1-0.jpg?itok=pYwEEXXp1693907061',
-                        'link'         : 'https://tinyzonetv.se/watch-movie/watch-the-equalizer-3-2023-free-99865.9893992',
+                        'link'         : 'https://vido.lol/embed-ux6qle2ifh2t.html',
                     },
     'THE NUN II' : {
                         'sous-title'   : ' Actors : Taissa Farmiga, Bonnie Aarons, Anna Popplewell, Storm Reid, Jonas Bloquet, Vera Farmiga',
@@ -119,6 +119,11 @@ let movies = {
 };
 
 const container = document.querySelector('.container');
+const searchButton = document.querySelector('.search-button');
+    const searchInput = document.querySelector('.search-bar');
+    const titles = document.querySelectorAll('h2');
+    const noResultsMessage = document.querySelector('.no-results');
+    const movieImages = document.querySelectorAll('.imgs');
 
 for (const [key, value] of Object.entries(movies)) {
 
@@ -179,4 +184,34 @@ document.addEventListener('DOMContentLoaded', function() {
             noResultsMessage.style.display = 'block';
         }
     }
+    function performSearch() {
+        const searchValue = searchInput.value.toLowerCase();
+        let resultsFound = false;
+
+        titles.forEach(title => {
+            const movieTitle = title.textContent.toLowerCase();
+            const parentElement = title.parentElement;
+
+            if (movieTitle.includes(searchValue)) {
+                parentElement.style.display = 'block';
+                resultsFound = true;
+            } else {
+                parentElement.style.display = 'none';
+            }
+        });
+
+        if (resultsFound) {
+            noResultsMessage.style.display = 'none';
+        } else {
+            noResultsMessage.style.display = 'block';
+        }
+    }
+
+    searchButton.addEventListener('click', performSearch);
+
+    searchInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            performSearch();
+        }
+    });
 });
