@@ -36,6 +36,12 @@ let movies = {
                         'img'          : 'https://i0.wp.com/filmonizirani.net/wp-content/uploads/2022/09/Heart-of-Stone-1.jpg?fit=800%2C450&ssl=1',
                         'link'         : 'https://vido.lol/embed-t5qlu7v4uw8d.html?',
                     },
+    'OPPENHEIMER' : {
+                        'sous-title'   : ' Actors : Cillian Murphy, Florence Pugh, Robert Downey Jr., Emily Blunt, Rami Malek,  David L. Hill, Matt Damon',
+                        'description'  : ' During World War II, Lieutenant General Leslie Groves Jr. appointed physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spent years developing and designing the atomic bomb. ',
+                        'img'          : 'https://w0.peakpx.com/wallpaper/198/257/HD-wallpaper-j-robert-oppenheimer-oppenheimer-2023-movies-movies.jpg',
+                        'link'         : 'https://vido.lol/embed-lviptghl28fh.html',
+                    },
     'BARBIE' : {
                         'sous-title'   : ' Actors : Margot Robbie, Ryan Gosling, Will Ferrell, Emma Mackey, Simu Liu, Micheal Cera',
                         'description'  : '  Barbie, who lives in Barbie Land, is kicked out of the country for being less than a perfect-looking doll; with nowhere to go, she leaves for the human world and seeks true happiness.',
@@ -108,6 +114,12 @@ let movies = {
                         'img'          : 'https://ntvb.tmsimg.com/assets/p14325539_v_h8_aj.jpg?w=1280&h=720%22',
                         'link'         : 'https://vido.lol/embed-n91p0xyllo9r.html?',
                     },
+    'JOHN WICK : CHAPTER 4' : {
+                        'sous-title'   : ' Actors : Keanu Reeves, Donnie Yen, Scott Adkins, Bill Skarsgård, Lance Reddick, Rina Sawayama',
+                        'description'  : ' John Wick faces his deadliest adversaries in the fourth installment of the series. The price on his head continues to rise, Wick takes his fight on a global scale, seeking out the most powerful players in the underworld, from New York to Paris via Osaka and Berlin.',
+                        'img'          : 'https://www.rts.ch/2023/03/21/17/45/13881586.image?w=1280&h=720',
+                        'link'         : 'https://vido.lol/embed-214r1w3u1597.html',
+                    },
     'AVATAR : THE WAY OF WATER' : {
                         'sous-title'   : ' Actors : Sam Worthington, Zoe Saldana, Sigourney Weaver, Kan Winslet, Stephen Lang, Michelle Yeoh',
                         'description'  : ' Since giving up his life as a government assassin, Robert McCall has struggled to make peace with his past demons and finds strange comfort in defending the oppressed. While he has found his haven of peace in the south of Italy, he discovers that his friends are under the control of the local mafia. When events take a deadly turn, McCall knows what he must do: protect his friends by taking on the mafia. Jake Sully and Neytiri have formed a family and do everything to stay as close together as possible. However, they are forced to leave their homes and explore the different still mysterious regions of Pandora. When an old threat resurfaces, Jake will have to fight an uphill war against the humans. ',
@@ -115,7 +127,6 @@ let movies = {
                         'link'         : 'https://vido.lol/embed-i6do9a23wina.html?',
                     },
     
-
 };
 
 const container = document.querySelector('.container');
